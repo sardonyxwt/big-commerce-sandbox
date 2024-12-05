@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [18.x]
+        node: [20.16]
 
     steps:
     - name: Checkout code
@@ -35,8 +35,8 @@ jobs:
 # You must configure store credentials as secrets on your GitHub repo for this job to work
 #
 
-    - name: Connect to store
-      run: stencil init -u ${{ env.STENCIL_STORE_URL_PRODUCTION }} -t ${{ env.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
+#    - name: Connect to store
+#      run: stencil init -u ${{ env.STENCIL_STORE_URL_PRODUCTION }} -t ${{ env.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
 
     - name: Check for an updated configuration on the live default storefront (channel ID 1)
       run: stencil pull -c 1

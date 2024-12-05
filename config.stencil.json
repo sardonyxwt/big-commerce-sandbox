@@ -1,0 +1,12 @@
+{
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  },
+  "normalStoreUrl": "https://test-store-p70.mybigcommerce.com",
+  "port": "3000",
+  "packageManager": "npm",
+  "apiHost": "https://api.bigcommerce.com"
+}

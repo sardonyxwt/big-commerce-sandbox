@@ -1,0 +1,14 @@
+<ul class="productGrid">
+    {{#each products}}
+    <li class="product">
+            {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+    </li>
+    {{/each}}
+</ul>
+<!--<div id="slider"></div>-->
+<!--<script>-->
+<!--    console.error('>>>');-->
+<!--    console.error(JSON.parse({{json products}}));-->
+<!--    console.error('>>>');-->
+<!--    // window.renderSlider(document.getElementById('slider'), JSON.parse(window.test))-->
+<!--</script>-->

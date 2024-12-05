@@ -45,8 +45,8 @@ jobs:
 
     - name: Connect to store
       env:
-        URL: ${{ secrets.STENCIL_STORE_URL_PRODUCTION }}
-        TOKEN: ${{ secrets.STENCIL_ACCESS_TOKEN_PRODUCTION }}
+        URL: ${{ env.STENCIL_STORE_URL_PRODUCTION }}
+        TOKEN: ${{ env.STENCIL_ACCESS_TOKEN_PRODUCTION }}
       run: stencil init -u $URL -t $TOKEN -pm npm -p 3000 -h https://api.bigcommerce.com
 
     - name: Check for an updated configuration on the live default storefront (channel ID 1)

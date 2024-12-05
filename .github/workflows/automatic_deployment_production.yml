@@ -36,6 +36,6 @@ jobs:
 #
 
     - name: Connect to store and push
-      run: \ 
+      run: | 
         stencil init -u ${{ env.STENCIL_STORE_URL_PRODUCTION }} -t ${{ env.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
         stencil push -a -d -c 1

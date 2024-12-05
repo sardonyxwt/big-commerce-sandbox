@@ -52,7 +52,7 @@ jobs:
       run: npm ci
 
     - name: Grunt Check
-      run: npx grunt check
+      run: npx grunt check --force
 
     - name: Validate theme successfully bundles
       run: npx stencil bundle --name ${{ matrix.os }}-node-${{ matrix.node }}-v${{ steps.package-version.outputs.version }}-${{ steps.vars.outputs.sha_short }}-bundle

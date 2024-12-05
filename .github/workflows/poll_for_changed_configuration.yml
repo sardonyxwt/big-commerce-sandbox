@@ -36,8 +36,10 @@ jobs:
 #
 
     - name: Connect to store and pull
-    - run: stencil init -u ${{ secrets.STENCIL_STORE_URL_PRODUCTION }} -t ${{ secrets.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
-    - run: stencil pull -c 1
+      run: stencil init -u ${{ secrets.STENCIL_STORE_URL_PRODUCTION }} -t ${{ secrets.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
+
+    - name: Pull updates
+      run: stencil pull -c 1
 
     - name: Create Pull Request
       id: cpr

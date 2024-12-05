@@ -35,11 +35,10 @@ jobs:
 # You must configure store credentials as secrets on your GitHub repo for this job to work
 #
 
-#    - name: Connect to store
-#      run: stencil init -u ${{ env.STENCIL_STORE_URL_PRODUCTION }} -t ${{ env.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
-
-    - name: Check for an updated configuration on the live default storefront (channel ID 1)
-      run: stencil pull -c 1
+    - name: Connect to store and pull
+      run: \ 
+        stencil init -u ${{ env.STENCIL_STORE_URL_PRODUCTION }} -t ${{ env.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
+        stencil pull -c 1
 
     - name: Create Pull Request
       id: cpr

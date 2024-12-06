@@ -35,8 +35,8 @@ jobs:
 # Alternate storefront, use a different channel ID
 #
 
-    - name: Connect to store and push
-      run: stencil init -u ${{ secrets.STENCIL_STORE_URL_PRODUCTION }} -t ${{ secrets.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
+#    - name: Connect to store and push
+#      run: stencil init -u ${{ secrets.STENCIL_STORE_URL_PRODUCTION }} -t ${{ secrets.STENCIL_ACCESS_TOKEN_PRODUCTION }} -pm npm -p 3000 -h https://api.bigcommerce.com
 
     - name: Push to store
       run: stencil push -a -d -c 1

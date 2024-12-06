@@ -12,6 +12,7 @@ module.exports = api => {
                 loose: true, // Enable "loose" transformations for any plugins in this preset that allow them
                 modules: 'auto',
                 useBuiltIns: 'usage', // Tree-shake babel-polyfill
+                corejs: '^3.39.0',
                 ...targets,
             }],
             '@babel/react',

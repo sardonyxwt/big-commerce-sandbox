@@ -32,7 +32,7 @@ module.exports = {
                                 loose: true, // Enable "loose" transformations for any plugins in this preset that allow them
                                 modules: false, // Don't transform modules; needed for tree-shaking
                                 useBuiltIns: 'entry',
-                                corejs: '^3.6.5',
+                                corejs: '^3.39.0',
                             }],
                         ],
                     },

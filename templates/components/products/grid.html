@@ -5,10 +5,9 @@
     </li>
     {{/each}}
 </ul>
-<!--<div id="slider"></div>-->
-<!--<script>-->
-<!--    console.error('>>>');-->
-<!--    console.error(JSON.parse({{json products}}));-->
-<!--    console.error('>>>');-->
-<!--    // window.renderSlider(document.getElementById('slider'), JSON.parse(window.test))-->
-<!--</script>-->
+<div id="slider"></div>
+<script>
+    setTimeout(() => {
+        window.renderCategoryProducts(document.getElementById('slider'), '{{ settings.storefront_api.token }}');
+    }, 2000)
+</script>

@@ -3,7 +3,7 @@ __webpack_public_path__ = window.__webpack_public_path__; // eslint-disable-line
 import Global from './theme/global';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Slider } from './components/slider';
+import { CategoryProducts } from './components/category-products';
 
 const getAccount = () => import('./theme/account');
 const getLogin = () => import('./theme/auth');
@@ -57,9 +57,9 @@ const pageClasses = {
 
 const customClasses = {};
 
-// window.renderSlider = (el, products) => {
-//     ReactDOM.render(<Slider products={products} />, el);
-// };
+window.renderCategoryProducts = (el, token) => {
+    ReactDOM.render(<CategoryProducts token={token} />, el);
+};
 
 /**
  * This function gets added to the global window and then called

@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@bigcommerce/stencil-utils": "6.18.0",
-    "core-js": "^3.9.0",
+    "core-js": "3.39.0",
     "creditcards": "^4.2.0",
     "easyzoom": "^2.5.3",
     "focus-trap": "^6.3.0",

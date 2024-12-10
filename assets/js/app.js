@@ -57,8 +57,8 @@ const pageClasses = {
 
 const customClasses = {};
 
-window.renderCategoryProducts = (el, token) => {
-    ReactDOM.render(<CategoryProducts token={token} />, el);
+window.renderCategoryProducts = (el, slideCount) => {
+    ReactDOM.render(<CategoryProducts slideCount={slideCount} token={window.accessToken} />, el);
 };
 
 /**

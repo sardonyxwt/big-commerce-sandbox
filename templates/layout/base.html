@@ -55,6 +55,7 @@
         {{> components/common/body }}
         {{> components/common/footer }}
 
+        <script>window.accessToken = "{{ settings.storefront_api.token }}";</script>
         <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
         <script>
             {{!-- Exported in app.js --}}

@@ -94,7 +94,7 @@ export const CategoryProducts = (props) => {
                 wrapperClass="categoryProducts-slider"
                 modules={[Scrollbar, A11y]}
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView={props.slideCount}
                 scrollbar={{draggable: true}}
             >
                 {products.map(product => (

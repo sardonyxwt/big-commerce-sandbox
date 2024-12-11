@@ -179,7 +179,7 @@
     "button--default-borderColor": "#8F8F8F",
     "button--default-borderColorHover": "#474747",
     "button--default-borderColorActive": "#757575",
-    "button--primary-color": "#ffffff",
+    "button--primary-color": "#888888",
     "button--primary-colorHover": "#ffffff",
     "button--primary-colorActive": "#ffffff",
     "button--primary-backgroundColor": "#440044",

@@ -1,7 +1,7 @@
 // =============================================================================
 // PRODUCT LIST (CSS)
 // =============================================================================
-
+@import "../../settings/global/cta";
 
 // Product list
 // -----------------------------------------------------------------------------
@@ -177,21 +177,21 @@
 
 .listItem-brand {
     color: color("greys", "light");
-    font-size: fontSize("base");
+    font-size: $cta-body1-size;
     margin: 0 0 spacing("eighth");
 
     @include breakpoint("medium") {
-        font-size: fontSize("smaller");
+        font-size: $cta-body2-size;
         margin-bottom: 0;
     }
 }
 
 .listItem-title {
-    font-size: fontSize("smaller");
+    font-size: $cta-body2-size;
     margin: 0 0 spacing("eighth");
 
     @include breakpoint("medium") {
-        font-size: fontSize("small");
+        font-size: $cta-body3-size;
     }
 
     > a {
@@ -200,10 +200,10 @@
 }
 
 .listItem-price {
-    margin-bottom: spacing("base");
+    margin-bottom: $cta-body1-size;
 
     @include breakpoint("medium") {
-        font-size: fontSize("small");
+        font-size: $cta-body2-size;
     }
 }
 

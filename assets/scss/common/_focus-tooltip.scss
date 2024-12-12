@@ -12,7 +12,6 @@
     &::after {
         background-color: $focusTooltip-backgroundColor;
         border-radius: remCalc(8px);
-        color: $focusTooltip-textColor;
         content: attr($attr);
         cursor: default;
         font-size: 1rem;

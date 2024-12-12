@@ -1,7 +1,7 @@
 // =============================================================================
 // BLOG
 // =============================================================================
-
+@import "../../settings/global/cta";
 
 // Blog post
 // -----------------------------------------------------------------------------
@@ -35,7 +35,7 @@
 }
 
 .blog-title {
-    font-size: fontSize("large");
+    @include h4;
     margin: 0 spacing("single") spacing("quarter");
 
     a {
@@ -54,7 +54,7 @@
 }
 
 .blog-post {
-    font-size: fontSize("smaller");
+    @include body2;
     text-align: left;
 }
 

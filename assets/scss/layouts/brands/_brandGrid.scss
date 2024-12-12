@@ -1,7 +1,7 @@
 // =============================================================================
 // BRAND GRID (CSS)
 // =============================================================================
-
+@import "../../settings/global/cta";
 
 // Brand grid view
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@
     .brand {
         @include grid-column(6, $float: none);
         display: inline-block;
-        font-size: fontSize("base"); // 1
+        font-size: $cta-body1-size; // 1
         vertical-align: top;
 
         @include breakpoint("small") {

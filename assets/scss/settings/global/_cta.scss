@@ -1,0 +1,126 @@
+@import "screensizes/screensizes";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// CTA
+// ----------------------------------------------------------------------------
+$cta-fontFamily: stencilFontFamily("cta-fontFamily");
+
+$cta-h1-size: stencilString("cta-h1-size");
+$cta-h1-lineHeight: stencilNumber("cta-h1-lineHeight", "");
+$cta-h1-letterSpacing: stencilString("cta-h1-letterSpacing");
+$cta-h2-size: stencilString("cta-h2-size");
+$cta-h2-lineHeight: stencilNumber("cta-h2-lineHeight", "");
+$cta-h2-letterSpacing: stencilString("cta-h2-letterSpacing");
+$cta-h3-size: stencilString("cta-h3-size");
+$cta-h3-lineHeight: stencilNumber("cta-h3-lineHeight", "");
+$cta-h3-letterSpacing: stencilString("cta-h3-letterSpacing");
+$cta-h4-size: stencilString("cta-h4-size");
+$cta-h4-lineHeight: stencilNumber("cta-h4-lineHeight", "");
+$cta-h4-letterSpacing: stencilString("cta-h4-letterSpacing");
+$cta-h5-size: stencilString("cta-h5-size");
+$cta-h5-lineHeight: stencilNumber("cta-h5-lineHeight", "");
+$cta-h5-letterSpacing: stencilString("cta-h5-letterSpacing");
+$cta-h6-size: stencilString("cta-h6-size");
+$cta-h6-lineHeight: stencilNumber("cta-h6-lineHeight", "");
+$cta-h6-letterSpacing: stencilString("cta-h6-letterSpacing");
+$cta-body1-size: stencilString("cta-body1-size");
+$cta-body1-lineHeight: stencilNumber("cta-body1-lineHeight", "");
+$cta-body1-letterSpacing: stencilString("cta-body1-letterSpacing");
+$cta-body2-size: stencilString("cta-body2-size");
+$cta-body2-lineHeight: stencilNumber("cta-body2-lineHeight", "");
+$cta-body2-letterSpacing: stencilString("cta-body2-letterSpacing");
+$cta-body3-size: stencilString("cta-body3-size");
+$cta-body3-lineHeight: stencilNumber("cta-body3-lineHeight", "");
+$cta-body3-letterSpacing: stencilString("cta-body3-letterSpacing");
+$cta-button-size: stencilString("cta-button-size");
+$cta-button-lineHeight: stencilNumber("cta-button-lineHeight", "");
+$cta-button-letterSpacing: stencilString("cta-button-letterSpacing");
+
+@media (max-width: $screen-small) {
+  $cta-h1-size: stencilString("cta-m-h1-size");
+  $cta-h1-lineHeight: stencilNumber("cta-m-h1-lineHeight", "");
+  $cta-h1-letterSpacing: stencilString("cta-m-h1-letterSpacing");
+  $cta-h2-size: stencilString("cta-m-h2-size");
+  $cta-h2-lineHeight: stencilNumber("cta-m-h2-lineHeight", "");
+  $cta-h2-letterSpacing: stencilString("cta-m-h2-letterSpacing");
+  $cta-h3-size: stencilString("cta-m-h3-size");
+  $cta-h3-lineHeight: stencilNumber("cta-m-h3-lineHeight", "");
+  $cta-h3-letterSpacing: stencilString("cta-m-h3-letterSpacing");
+  $cta-h4-size: stencilString("cta-m-h4-size");
+  $cta-h4-lineHeight: stencilNumber("cta-m-h4-lineHeight", "");
+  $cta-h4-letterSpacing: stencilString("cta-m-h4-letterSpacing");
+  $cta-h5-size: stencilString("cta-m-h5-size");
+  $cta-h5-lineHeight: stencilNumber("cta-m-h5-lineHeight", "");
+  $cta-h5-letterSpacing: stencilString("cta-m-h5-letterSpacing");
+  $cta-h6-size: stencilString("cta-m-h6-size");
+  $cta-h6-lineHeight: stencilNumber("cta-m-h6-lineHeight", "");
+  $cta-h6-letterSpacing: stencilString("cta-m-h6-letterSpacing");
+}
+
+$cta-base-color: stencilColor("cta-base-color");
+$cta-base-text-color: stencilColor("cta-base-text-color");
+$cta-grey-color: stencilColor("cta-grey-color");
+$cta-greyDark-color: stencilColor("cta-greyDark-color");
+$cta-greyLight-color: stencilColor("cta-greyLight-color");
+$cta-primary-color: stencilColor("cta-primary-color");
+$cta-primaryDark-color: stencilColor("cta-primaryDark-color");
+$cta-error-color: stencilColor("cta-error-color");
+
+@mixin font($size, $lineHeight, $letterSpacing) {
+  color: $cta-base-color;
+  font-family: $cta-fontFamily;
+  font-size: $size;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin h1 {
+  @include font($cta-h1-size, $cta-h1-lineHeight, $cta-h1-letterSpacing);
+  font-weight: 600;
+}
+
+@mixin h2 {
+  @include font($cta-h2-size, $cta-h2-lineHeight, $cta-h2-letterSpacing);
+  font-weight: 600;
+}
+
+@mixin h3 {
+  @include font($cta-h3-size, $cta-h3-lineHeight, $cta-h3-letterSpacing);
+  font-weight: 600;
+}
+
+@mixin h4 {
+  @include font($cta-h4-size, $cta-h4-lineHeight, $cta-h4-letterSpacing);
+  font-weight: 600;
+}
+
+@mixin h5 {
+  @include font($cta-h5-size, $cta-h5-lineHeight, $cta-h5-letterSpacing);
+  font-weight: 600;
+}
+
+@mixin h6 {
+  @include font($cta-h6-size, $cta-h6-lineHeight, $cta-h6-letterSpacing);
+  font-weight: 600;
+}
+
+@mixin body1 {
+  @include font($cta-body1-size, $cta-body1-lineHeight, $cta-body1-letterSpacing);
+  font-weight: 400;
+}
+
+@mixin body2 {
+  @include font($cta-body2-size, $cta-body2-lineHeight, $cta-body2-letterSpacing);
+  font-weight: 400;
+}
+
+@mixin body3 {
+  @include font($cta-body3-size, $cta-body3-lineHeight, $cta-body3-letterSpacing);
+  font-weight: 400;
+}
+
+@mixin button {
+  @include font($cta-button-size, $cta-button-lineHeight, $cta-button-letterSpacing);
+  font-weight: 400;
+}

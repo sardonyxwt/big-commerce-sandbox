@@ -1,7 +1,7 @@
 // =============================================================================
 // ACTION BAR (CSS)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 .actionBar-section {
     .form-field {
@@ -15,9 +15,7 @@
     }
 
     .form-label {
-        color: $actionBar-form-label-color;
-        font-size: $actionBar-form-label-fontSize;
-        line-height: $actionBar-form-label-lineHeight;
+        @include body3;
         margin-bottom: 0;
         padding-left: $actionBar-form-label-padding;
     }

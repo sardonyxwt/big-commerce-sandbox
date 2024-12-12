@@ -4,7 +4,7 @@
 // Purpose: These are the styles for the base Slick carousel
 //
 // -----------------------------------------------------------------------------
-
+@import "../../../settings/global/cta";
 
 //
 // Next and Previous buttons for all carousels
@@ -260,8 +260,7 @@ div.slick-slider {
     bottom: spacing("third");
     color: $slick-play-pause-button-color;
     display: none;
-    font-size: 14px;
-    font-weight: 700;
+    @include body2;
     height: 32px;
     left: 15px;
     line-height: 1.25;
@@ -275,7 +274,7 @@ div.slick-slider {
     z-index: zIndex("lowest");
 
     @include breakpoint("small") {
-        font-size: 18px;
+        @include body1;
         max-width: 150px;
     }
 

@@ -1,7 +1,7 @@
 // =============================================================================
 // FORMS (Settings)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // Foundation Variables
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@ $form-spacing:                      spacing("single");
 
 // We use these to style the labels in different ways
 $form-label-pointer:                pointer;
-$form-label-font-size:              fontSize("base");
+$form-label-font-size:              $cta-body1-size;
 $form-label-font-weight:            null;
 $form-label-line-height:            lineHeight("base");
 $form-label-font-color:             stencilColor("form-label-font-color");

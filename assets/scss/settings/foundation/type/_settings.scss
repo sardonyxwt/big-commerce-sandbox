@@ -1,7 +1,7 @@
 // =============================================================================
 // TYPE (Settings)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // Stencil Variables
 // -----------------------------------------------------------------------------
@@ -15,12 +15,12 @@
 
 $exportCSS--type:               true; // 1
 
-$html-fontSize:                 $fontSize-root;
-$html-fontSize--smallUp:        $fontSize-root;
-$html-fontSize--mediumUp:       $fontSize-root;
-$html-fontSize--largeUp:        $fontSize-root;
+$html-fontSize:                 $cta-body1-size;
+$html-fontSize--smallUp:        $cta-body1-size;
+$html-fontSize--mediumUp:       $cta-body1-size;
+$html-fontSize--largeUp:        $cta-body1-size;
 
-$body-fontSize:                 fontSize("base");
+$body-fontSize:                 $cta-body1-size;
 
 $code-font-size:                null;
 
@@ -31,9 +31,9 @@ $anchor-transition:             color 0.15s ease;
 $blockquote-borderColor:        null;
 $blockquote-borderStyle:        null;
 $blockquote-borderWidth:        null;
-$blockquote-fontSize:           fontSize("large");
+$blockquote-fontSize:           $cta-h4-size;
 $blockquote-fontWeight:         null;
-$blockquote-lineHeight:         lineHeight("large");
+$blockquote-lineHeight:         $cta-h4-lineHeight;
 $blockquote-margin:             null;
 
 $blockquote-cite-content:       null;
@@ -57,7 +57,7 @@ $heading-textTransform:         uppercase;
 // -----------------------------------------------------------------------------
 
 // We use these to define default font stacks
-$font-family-sans-serif:        fontFamily("sans");
+$font-family-sans-serif:        $cta-fontFamily;
 $font-family-serif:             fontFamily("serif");
 $font-family-monospace:         fontFamily("mono");
 
@@ -67,8 +67,8 @@ $font-weight-bold:              fontWeight("bold");
 
 // We use these to control various global styles
 $body-bg:                       stencilColor("body-bg");
-$body-font-color:               stencilColor("color-textBase");
-$body-font-family:              stencilFontFamily("body-font"), Arial, Helvetica, sans-serif;
+$body-font-color:               $cta-base-text-color;
+$body-font-family:              $cta-fontFamily;
 $body-font-weight:              stencilFontWeight("body-font");
 $body-font-style:               null;
 
@@ -76,23 +76,23 @@ $body-font-style:               null;
 $font-smoothing:                antialiased;
 
 // We use these to control header font styles
-$header-font-family:            stencilFontFamily("headings-font"), Arial, Helvetica, sans-serif;
+$header-font-family:            $cta-fontFamily;
 $header-font-weight:            stencilFontWeight("headings-font");
 $header-font-style:             null;
-$header-font-color:             stencilColor("color-textHeading");
+$header-font-color:             $cta-base-text-color;
 $header-line-height:            null;
 $header-top-margin:             spacing("double");
 $header-bottom-margin:          spacing("half");
 $header-text-rendering:         null;
-$header-letter-spacing:         letterSpacing("small");
+$header-letter-spacing:         $cta-body1-letterSpacing;
 
 // We use these to control header font sizes
-$h1-font-size:                  fontSize("largest");
-$h2-font-size:                  fontSize("larger");
-$h3-font-size:                  fontSize("large");
-$h4-font-size:                  fontSize("small");
-$h5-font-size:                  fontSize("smaller");
-$h6-font-size:                  fontSize("smallest");
+$h1-font-size:                  $cta-h1-size;
+$h2-font-size:                  $cta-h2-size;
+$h3-font-size:                  $cta-h3-size;
+$h4-font-size:                  $cta-h4-size;
+$h5-font-size:                  $cta-h5-size;
+$h6-font-size:                  $cta-h6-size;
 
 
 // These control how subheaders are styled.
@@ -108,8 +108,8 @@ $small-font-color:              stencilColor("color-textSecondary");
 // We use these to style paragraphs
 $paragraph-font-family:         null;
 $paragraph-font-weight:         null;
-$paragraph-font-size:           null;
-$paragraph-line-height:         null;
+$paragraph-font-size:           $cta-body1-size;
+$paragraph-line-height:         $cta-body1-lineHeight;
 $paragraph-margin-bottom:       spacing("single");
 $paragraph-aside-font-size:     null;
 $paragraph-aside-line-height:   null;
@@ -156,7 +156,7 @@ $definition-list-margin-bottom: spacing("single");
 $blockquote-font-color:         null;
 $blockquote-padding:            null;
 $blockquote-border:             null;
-$blockquote-cite-font-size:     fontSize("base");
+$blockquote-cite-font-size:     $cta-body1-size;
 $blockquote-cite-font-color:    stencilColor("blockquote-cite-font-color");
 $blockquote-cite-link-color:    null;
 

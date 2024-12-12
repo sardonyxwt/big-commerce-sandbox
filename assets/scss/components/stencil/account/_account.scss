@@ -1,7 +1,7 @@
 // =============================================================================
 // ACCOUNT (CSS)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // Account navigation
 // -----------------------------------------------------------------------------
@@ -109,7 +109,7 @@
     }
 
     .definitionList {
-        font-size: fontSize("smaller");
+        font-size: $cta-body2-size;
         margin-bottom: 0;
     }
 }
@@ -129,15 +129,15 @@
 
 .account-product-subtitle {
     color: color("greys", "light");
-    font-family: fontFamily("sans");
-    font-size: fontSize("smaller");
+    font-family: $cta-fontFamily;
+    font-size: $cta-body2-size;
     margin: -(spacing("eighth")) 0 spacing("base");
     text-transform: inherit;
 }
 
 .account-product-price {
     float: right;
-    font-size: fontSize("smaller");
+    font-size: $cta-body2-size;
 }
 
 .account-product-description + .definitionList {
@@ -193,8 +193,8 @@
 
 .account-product-detail-heading {
     color: stencilColor("color-textSecondary");
-    font-family: fontFamily("sans");
-    font-size: fontSize("tiny");
+    font-family: $cta-fontFamily;
+    font-size: $cta-body3-size;
     margin: 0 0 spacing("quarter");
 }
 
@@ -254,7 +254,7 @@
 
 .account-orderTotal {
     float: right;
-    font-size: fontSize("smaller");
+    font-size: $cta-body2-size;
     margin-top: -(spacing("single"));
     width: grid-calc(8, $total-columns);
 }

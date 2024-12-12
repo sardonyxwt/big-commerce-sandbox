@@ -1,7 +1,7 @@
 // =============================================================================
 // COMPARE (CSS)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // Compare table layout
 // -----------------------------------------------------------------------------
@@ -36,8 +36,8 @@
 // -----------------------------------------------------------------------------
 
 .compareTable-heading {
-    font-family: fontFamily("headingSans");
-    font-size: fontSize("smaller");
+    font-family: $cta-fontFamily;
+    font-size: $cta-body2-size;
     font-weight: fontWeight("normal");
     padding: (spacing("base") + spacing("sixth")) spacing("base");
     position: relative;

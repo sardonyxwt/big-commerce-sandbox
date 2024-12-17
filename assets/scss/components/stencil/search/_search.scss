@@ -1,6 +1,7 @@
 // =============================================================================
 // SEARCH
 // =============================================================================
+@import "../../../settings/global/cta";
 
 .search-suggestion {
     margin-bottom: spacing("single") + spacing("third");
@@ -79,7 +80,7 @@
 
 .category-suggestion {
     @include grid-column(4);
-    font-size: fontSize("smaller");
+    font-size: $cta-body2-size;;
 }
 
 .search-refine {
@@ -87,7 +88,7 @@
 }
 
 .quickSearchMessage {
-    font-size: fontSize("largest");
+    font-size: $cta-h4-size;
     margin: spacing("single") 0 0;
     text-align: center;
 }

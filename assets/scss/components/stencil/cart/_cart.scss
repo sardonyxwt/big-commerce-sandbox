@@ -5,6 +5,7 @@
 // 1. Override server-generated inline-css
 //
 // -----------------------------------------------------------------------------
+@import "../../../settings/global/cta";
 
 // Cart variables
 // -----------------------------------------------------------------------------
@@ -263,7 +264,7 @@ $card-preview-zoom-bottom-offset:       6rem;
 
 .cart-item-name {
     display: inline-block;
-    font-size: fontSize("smaller");
+    font-size: $cta-body2-size;
     margin: 0;
 
     &__label {
@@ -401,8 +402,8 @@ $card-preview-zoom-bottom-offset:       6rem;
 }
 
 .cart-total-grandTotal {
-    font-family: fontFamily("headingSans");
-    font-size: fontSize("small");
+    font-family: $cta-fontFamily;
+    font-size: $cta-body2-size;
     padding-bottom: spacing("eighth");
     padding-top: spacing("eighth");
     position: relative;

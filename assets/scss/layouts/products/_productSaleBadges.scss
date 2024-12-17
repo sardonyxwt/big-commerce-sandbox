@@ -1,6 +1,7 @@
 // =============================================================================
 // PRODUCT Sale Badges (CSS)
 // =============================================================================
+@import "../../settings/global/cta";
 
 @mixin setFlagColors($badge-color, $text-color) {
     background: stencilColor($badge-color);
@@ -26,7 +27,7 @@
     &::before {
         transform: rotateZ(30deg) scaleX(1) scaleY(1) scaleZ(1);
     }
-    
+
     &::after {
         transform: rotateZ(60deg) scaleX(1) scaleY(1) scaleZ(1);
     }
@@ -96,12 +97,12 @@
     .sale-flag-star::after {
         background: stencilColor("color_hover_product_sale_badges");
     }
-    
+
     .sold-out-flag-star,
     .sold-out-flag-star::before,
     .sold-out-flag-star::after {
         background: stencilColor("color_hover_product_sold_out_badges");
-    }    
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -109,7 +110,7 @@
 // -----------------------------------------------------------------------------
 %base-flag-side {
     border-radius: 0 50px 50px 0;
-    font-size: 15px;
+    font-size: $cta-body1-size;
     font-weight: 700;
     height: rem-calc(20px);
     line-height: rem-calc(16px);
@@ -143,7 +144,7 @@
 // SASH BADGE
 // -----------------------------------------------------------------------------
 %base-flag-sash {
-    font-size: 15px;
+    font-size: $cta-body1-size;
     font-weight: 700;
     height: rem-calc(20px);
     left: -25px;

@@ -1,7 +1,7 @@
 // =============================================================================
 // BUTTONS (Settings)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // BigCommerce Variables
 // -----------------------------------------------------------------------------
@@ -19,7 +19,7 @@ $exportCSS--buttons:                    true; // 1
 // Button Style variables
 // -----------------------------------------------------------------------------
 
-$buttonStyle-default-color:                  stencilColor("button--default-color");
+$buttonStyle-default-color:                  $cta-primary-color;
 $buttonStyle-default-colorHover:             stencilColor("button--default-colorHover");
 $buttonStyle-default-colorActive:            stencilColor("button--default-colorActive");
 $buttonStyle-default-backgroundColor:        transparent;
@@ -32,12 +32,12 @@ $buttonStyle-default-borderColorActive:      stencilColor("button--default-borde
 $buttonStyle-primary-color:                  stencilColor("button--primary-color");
 $buttonStyle-primary-colorHover:             stencilColor("button--primary-colorHover");
 $buttonStyle-primary-colorActive:            stencilColor("button--primary-colorActive");
-$buttonStyle-primary-backgroundColor:        stencilColor("button--primary-backgroundColor");
-$buttonStyle-primary-backgroundColorHover:   stencilColor("button--primary-backgroundColorHover");
-$buttonStyle-primary-backgroundColorActive:  stencilColor("button--primary-backgroundColorActive");
-$buttonStyle-primary-borderColor:            stencilColor("button--primary-backgroundColor");
-$buttonStyle-primary-borderColorHover:       stencilColor("button--primary-backgroundColorHover");
-$buttonStyle-primary-borderColorActive:      stencilColor("button--primary-backgroundColorActive");
+$buttonStyle-primary-backgroundColor:        $cta-primary-color;
+$buttonStyle-primary-backgroundColorHover:   $cta-primaryDark-color;
+$buttonStyle-primary-backgroundColorActive:  $cta-primaryDark-color;
+$buttonStyle-primary-borderColor:            $cta-primary-color;
+$buttonStyle-primary-borderColorHover:       $cta-primaryDark-color;
+$buttonStyle-primary-borderColorActive:      $cta-primaryDark-color;
 
 $buttonStyle-disabled-color:                 stencilColor("button--disabled-color");
 $buttonStyle-disabled-colorHover:            null;

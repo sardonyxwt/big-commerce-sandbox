@@ -1,7 +1,7 @@
 // =============================================================================
 // FORMS (CSS)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // Form variants
 // -----------------------------------------------------------------------------
@@ -146,8 +146,7 @@
 }
 
 .form-label--alternate {
-    font-family: fontFamily("headingSans");
-    font-size: fontSize("smallest");
+    @include body3;
     margin-bottom: spacing("half");
 }
 
@@ -182,7 +181,7 @@
 
 .form-fileDescription {
     color: color("greys", "light");
-    font-size: fontSize("smallest");
+    font-size: $cta-body3-size;
 }
 
 .form-field-group {

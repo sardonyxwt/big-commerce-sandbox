@@ -1,7 +1,7 @@
 // =============================================================================
 // NAV (CSS)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // Citadel inline messages
 // -----------------------------------------------------------------------------
@@ -132,8 +132,8 @@
     }
 
     .navBar-action {
+        @include body1;
         color: stencilColor("color-textSecondary");
-        font-size: fontSize("base");
         padding: 0;
 
         &:hover {

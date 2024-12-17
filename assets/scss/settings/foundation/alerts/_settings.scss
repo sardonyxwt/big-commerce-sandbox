@@ -1,7 +1,7 @@
 // =============================================================================
 // ALERTS (Settings)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // BigCommerce Variables
 // -----------------------------------------------------------------------------
@@ -74,7 +74,7 @@ $alert-padding-bottom:             $alert-padding-top;
 
 // We use these to control text style.
 $alert-font-weight:                $font-weight-normal;
-$alert-font-size:                  fontSize("base");
+$alert-font-size:                  $cta-body1-size;
 $alert-font-color:                 stencilColor("alert-color");
 $alert-font-color-alt:             stencilColor("alert-color-alt");
 

@@ -1,7 +1,7 @@
 // =============================================================================
 // ACCORDION (Settings)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // BigCommerce Variables
 // -----------------------------------------------------------------------------
@@ -54,8 +54,8 @@ $accordion-navigation-bg-color:                 container("fill");
 $accordion-navigation-hover-bg-color:           container("fill", "dark");
 $accordion-navigation-active-bg-color:          container("fill");
 $accordion-navigation-font-color:               stencilColor("color-textBase");
-$accordion-navigation-font-size:                fontSize("base");
-$accordion-navigation-font-family:              fontFamily("sans");
+$accordion-navigation-font-size:                $cta-body1-size;
+$accordion-navigation-font-family:              $cta-fontFamily;
 
 $accordion-content-padding:                     container("padding", "large");
 $accordion-content-active-bg-color:             null;

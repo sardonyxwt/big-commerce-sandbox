@@ -3,6 +3,126 @@
     "name": "i18n.Global",
     "settings": [
       {
+        "type": "select",
+        "label": "cta-fontFamily",
+        "id": "cta-fontFamily",
+        "options": [
+          {
+            "label": "Google_Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "value": "Open_Sans",
+            "label": "Open_Sans"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "cta-h1-size",
+        "id": "cta-h1-size",
+        "options": [
+          {
+            "value": "48px",
+            "label": "48"
+          },
+          {
+            "value": "46px",
+            "label": "46"
+          },
+          {
+            "value": "44px",
+            "label": "44"
+          },
+          {
+            "value": "42px",
+            "label": "42"
+          },
+          {
+            "value": "40",
+            "label": "40"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "cta-h1-lineHeight",
+        "id": "cta-h1-lineHeight",
+        "options": [
+          {
+            "value": 1.125,
+            "label": "1.125"
+          },
+          {
+            "value": 1,
+            "label": "1"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "cta-h1-letterSpacing",
+        "id": "cta-h1-letterSpacing",
+        "options": [
+          {
+            "value": "-1.5px",
+            "label": "-1.5"
+          },
+          {
+            "value": "-1px",
+            "label": "-1"
+          },
+          {
+            "value": "-0.5px",
+            "label": "-0.5"
+          },
+          {
+            "value": "0px",
+            "label": "0"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "label": "cta-base-color",
+        "id": "cta-base-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-base-text-color",
+        "id": "cta-base-text-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-grey-color",
+        "id": "cta-grey-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-greyDark-color",
+        "id": "cta-greyDark-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-greyLight-color",
+        "id": "cta-greyLight-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-primary-color",
+        "id": "cta-primary-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-primaryDark-color",
+        "id": "cta-primaryDark-color"
+      },
+      {
+        "type": "color",
+        "label": "cta-error-color",
+        "id": "cta-error-color"
+      },
+      {
         "type": "heading",
         "content": "i18n.BackgroundAndLines"
       },

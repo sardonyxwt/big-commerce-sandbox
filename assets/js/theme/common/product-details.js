@@ -29,6 +29,10 @@ export default class ProductDetails extends ProductDetailsBase {
 
         const $form = $('form[data-cart-item-add]', $scope);
 
+        if (!$form || !$form[0]) {
+            return;
+        }
+
         if ($form[0].checkValidity()) {
             this.updateProductDetailsData();
         } else {

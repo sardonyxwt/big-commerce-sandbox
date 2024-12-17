@@ -1,7 +1,7 @@
 // =============================================================================
 // TABLES (Settings)
 // =============================================================================
-
+@import "../../../settings/global/cta";
 
 // BigCommerce Variables
 // -----------------------------------------------------------------------------
@@ -53,7 +53,7 @@ $table-border-color:                container("borderColor");
 
 // These control the table head styles
 $table-head-bg:                     container("fill", "dark");
-$table-head-font-size:              fontSize("base");
+$table-head-font-size:              $cta-body1-size;
 $table-head-font-color:             null;
 $table-head-font-weight:            fontWeight("bold");
 $table-head-padding:                spacing("half") spacing("single");

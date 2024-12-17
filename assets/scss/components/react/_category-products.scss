@@ -1,3 +1,5 @@
+@import "../../settings/global/cta";
+
 .categoryProducts {
     width: 100%;
     border-radius: 8px;
@@ -17,7 +19,7 @@
     padding: 0 4px;
     border-radius: 4px;
     color: stencilColor("button--primary-color");
-    background-color: stencilColor("button--primary-backgroundColor");
+    background-color: $cta-primary-color;
 }
 
 .categoryProducts-slider {
@@ -76,5 +78,5 @@
     text-align: center;
     border-radius: 4px;
     color: stencilColor("button--primary-color");
-    background-color: stencilColor("button--primary-backgroundColor");
+    background-color: $cta-primary-color;
 }

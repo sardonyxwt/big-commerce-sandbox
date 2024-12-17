@@ -15,6 +15,7 @@
 //    setting the previous styles to medium breakpoint and adjusts for nudge in (7).
 //
 // -----------------------------------------------------------------------------
+@import "../../../settings/global/cta";
 
 .navUser {
     @include nav($style: "navBar", $wrapper: "nav");

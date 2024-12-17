@@ -16,6 +16,7 @@
 //    content in center regardless its size.
 //
 // -----------------------------------------------------------------------------
+@import "../../settings/global/cta";
 
 .skip-to-main-link {
     background: $header-bg;
@@ -143,10 +144,7 @@
 
 .header-logo-text {
     display: block;
-    font-family: $fontFamily-hero;
-    font-size: $fontSize-logo-small;   // 1
-    font-weight: stencilFontWeight("headings-font");
-    letter-spacing: remCalc(2px);
+    @include body2;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -167,7 +165,7 @@
         white-space: normal;
 
         .header.fixed & {
-            font-size: fontSize("larger");
+            font-size: $cta-h4-size;
         }
     }
 }

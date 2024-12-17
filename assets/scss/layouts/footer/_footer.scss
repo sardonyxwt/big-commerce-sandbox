@@ -1,7 +1,7 @@
 // =============================================================================
 // FOOTER (CSS)
 // =============================================================================
-
+@import "../../settings/global/cta";
 
 // Layout and columns
 // -----------------------------------------------------------------------------
@@ -40,7 +40,7 @@
     color: stencilColor("color-textSecondary");
     display: inline-block;
     float: none;
-    font-size: fontSize("base"); // 2
+    font-size: $cta-body1-size; // 2
     overflow-wrap: break-word;
     text-align: center;
     vertical-align: top;
@@ -101,7 +101,7 @@
 
 .footer-info-heading {
     color: $footer-heading-fontColor;
-    font-size: fontSize("base");
+    font-size: $cta-body1-size;
     text-transform: inherit;
 }
 
@@ -128,7 +128,7 @@
 
     > .powered-by {
         color: stencilColor("color-textSecondary");
-        font-size: fontSize("tiny");
+        font-size: $cta-body3-size;
         margin: 0;
     }
 

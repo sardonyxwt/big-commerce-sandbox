@@ -5,6 +5,7 @@
 // 1. Set to 0 so that the tags can be centred with an unknown width.
 //
 // -----------------------------------------------------------------------------
+@import "../../../settings/global/cta";
 
 .tags {
     @include u-listBullets("none");

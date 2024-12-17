@@ -2,8 +2,9 @@ __webpack_public_path__ = window.__webpack_public_path__; // eslint-disable-line
 
 import Global from './theme/global';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { CategoryProducts } from './components/category-products';
+import { ProductGenericForm } from './components/product-generic-form';
 
 const getAccount = () => import('./theme/account');
 const getLogin = () => import('./theme/auth');
@@ -58,8 +59,12 @@ const pageClasses = {
 const customClasses = {};
 
 window.renderCategoryProducts = (el, slideCount) => {
-    ReactDOM.render(<CategoryProducts slideCount={slideCount} token={window.accessToken} />, el);
+    createRoot(el).render(<CategoryProducts slideCount={slideCount} token={window.accessToken} />);
 };
+
+window.renderProductGenericForm = (el, props) => {
+    createRoot(el).render(<ProductGenericForm {...props}/>);
+}
 
 /**
  * This function gets added to the global window and then called

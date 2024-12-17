@@ -8,6 +8,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+
 import {searchProductsByCategoryIdQuery} from "../../gql/category-products.gql";
 import {categoryTreeQuery} from "../../gql/category-tree.gql";
 
@@ -62,8 +63,6 @@ export const CategoryProducts = (props) => {
     useEffect(() => {
         void init();
     }, []);
-
-    console.error(categories, selectedCategory, products);
 
     if (isLoading && !isInitialized) {
         return 'Loading...'
